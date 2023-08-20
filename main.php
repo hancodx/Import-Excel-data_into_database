@@ -44,20 +44,20 @@ if(isset($_POST['save_excel_data']))
         if(isset($msg))
         {
             $_SESSION['message'] = "Successfully Imported";
-            header('Location: index.php');
+            header('Location: main.php');
             exit(0);
         }
         else
         {
             $_SESSION['message'] = "Not Imported";
-            header('Location: index.php');
+            header('Location: main.php');
             exit(0);
         }
     }
     else
     {
         $_SESSION['message'] = "Invalid File";
-        header('Location: index.php');
+        header('Location: main.php');
         exit(0);
     }
 }
