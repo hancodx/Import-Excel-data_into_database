@@ -88,20 +88,18 @@ if(isset($_POST['save_excel_data']))
                 }
                 ?>
 
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Import Excel Data into database</h4>
-                    </div>
-                    <div class="card-body">
+             
+                <div>
+                    <h4>Import Excel Data into database</h4>
+              
+                    <form method="POST" enctype="multipart/form-data">
 
-                        <form method="POST" enctype="multipart/form-data">
+                        <input type="file" name="import_file" class="form-control" />
+                        <button type="submit" name="save_excel_data" class="btn btn-primary mt-3" style="background-color: crimson;">Import</button>
 
-                            <input type="file" name="import_file" class="form-control" />
-                            <button type="submit" name="save_excel_data" class="btn btn-primary mt-3" style="background-color: crimson;">Import</button>
+                    </form>
 
-                        </form>
-
-                    </div>
+                    
                 </div>
 
 
